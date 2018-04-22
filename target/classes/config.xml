@@ -64,7 +64,17 @@
 				</entry>
 			</map>
 		</property>
-		
+	</bean>
+	
+	<bean name="countriesAndLangs" class="com.gareth.spring.springcore.properties.CountriesAndLanguages">
+		<property name="countryAndLangs">
+			<props>
+				<prop key="Ireland">Irish</prop>
+				<prop key="England">English</prop>
+				<prop key="Spain">Spanish</prop>
+				<prop key="China">Mandarin</prop>
+			</props>
+		</property>
 	</bean>
 	
 </beans>
