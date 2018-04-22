@@ -28,4 +28,19 @@
 		</property>
 	</bean>
 	
+	<bean name="cardealer" class="com.gareth.spring.springcore.set.CarDealer">
+		<property name="name">
+			<value>Western Motor Park</value>
+		</property>
+		<property name="models">
+			<set>
+				<value>BMW</value>
+				<value>Nissan</value>
+				<value>Toyota</value>
+				<value>VW</value>
+				<value>Mercedes</value>
+			</set>
+		</property>
+	</bean>
+	
 </beans>
