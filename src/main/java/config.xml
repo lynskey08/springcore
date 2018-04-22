@@ -11,4 +11,21 @@
 	<bean name="emp" class="com.gareth.spring.springcore.Employee"
 	p:id="20" p:name="Gareth"/>
 	
+	<bean name="hospital" class="com.gareth.spring.springcore.list.Hospital">
+		<property name="name">
+			<value>UCHG</value>
+		</property>
+		<property name="departments">
+			<list>
+				<value>Anaesthetics</value>
+				<value>Accident and Emergency</value>
+				<value>Cardiology</value>
+				<value>Surgery</value>
+				<value>Neurology</value>
+				<value>Physiotherapy</value>
+				<value>Radiotherapy</value>
+			</list>
+		</property>
+	</bean>
+	
 </beans>
