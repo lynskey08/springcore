@@ -82,10 +82,14 @@
 	
 	<!-- Injecting reference types -->
 	<bean name="scores" class="com.gareth.spring.springcore.reftypes.Scores" p:maths="80" p:physics="75" p:chemistry="82"/>	
-	<!-- Here we are referring to the bean name score
-			     and that will inject scores into the scores 
-			     property of a student -->
+	<!-- Here we are referring to the bean name score and that will 
+	     inject scores into the scores property of a student -->
 	<bean name="student" class="com.gareth.spring.springcore.reftypes.Student" p:scores-ref="scores"/>
+	
+	
+	<!-- assignment -->
+	<bean name="item" class="com.gareth.spring.springcore.assignment.Item" p:id="1" p:name="toothbrush" p:price="2.50" p:quantity="2"/>
+	<bean name="shoppingcart" class="com.gareth.spring.springcore.assignment.ShoppingCart" p:item-ref="item"/>
 
 	
 </beans>
