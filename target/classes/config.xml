@@ -43,4 +43,28 @@
 		</property>
 	</bean>
 	
+	<bean name="customer" class="com.gareth.spring.springcore.map.Customer"
+	p:id="20">
+		<property name="products">
+			<map>
+				<entry key="100" value="iPhone"/>
+				<entry key="200">
+					<value>Samsung s7</value>
+				</entry>
+				<entry value="MacBook Pro">
+					<key>
+						<value>300</value>
+					</key>
+				</entry>
+				<entry>
+					<key>
+						<value>400</value>
+					</key>
+					<value>Lenovo B590</value>
+				</entry>
+			</map>
+		</property>
+		
+	</bean>
+	
 </beans>
