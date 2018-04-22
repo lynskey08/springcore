@@ -82,12 +82,10 @@
 	
 	<!-- Injecting reference types -->
 	<bean name="scores" class="com.gareth.spring.springcore.reftypes.Scores" p:maths="80" p:physics="75" p:chemistry="82"/>	
-	<bean name="student" class="com.gareth.spring.springcore.reftypes.Student">
-		<!-- Here we are referring to the bean name score
+	<!-- Here we are referring to the bean name score
 			     and that will inject scores into the scores 
 			     property of a student -->
-		<property name="scores" ref="scores"/>	
-	</bean>
-	
+	<bean name="student" class="com.gareth.spring.springcore.reftypes.Student" p:scores-ref="scores"/>
+
 	
 </beans>
