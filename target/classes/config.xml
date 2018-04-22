@@ -8,7 +8,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns="http://www.springframework.org/schema/beans">
 	
-	<bean name="emp" class="com.gareth.spring.springcore.Employeee">
+	<bean name="emp" class="com.gareth.spring.springcore.Employee">
 		<property name="id">
 			<value>20</value>
 		</property>
