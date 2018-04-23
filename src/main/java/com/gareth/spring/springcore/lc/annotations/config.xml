@@ -10,7 +10,6 @@
 	
 	<bean class="com.gareth.spring.springcore.lc.annotations.Patient"
 	name="patient" p:id="123"/>
-	<!-- enables the support for lifecycle annotations -->
-	<bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>
-	
+	<!-- enables the support for all the annotations -->
+	<context:annotation-config/>
 </beans>
