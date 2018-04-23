@@ -9,7 +9,7 @@
 	xmlns="http://www.springframework.org/schema/beans">
 	
 	<bean class="com.gareth.spring.springcore.lc.annotations.Patient"
-	name="patient" p:id="123"/>
+	name="patient"/>
 	<!-- enables the support for all annotations -->
 	<context:annotation-config/>
 	

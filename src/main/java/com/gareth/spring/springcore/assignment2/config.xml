@@ -8,9 +8,8 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns="http://www.springframework.org/schema/beans">
 	
-	<bean class="com.gareth.spring.springcore.lc.annotations.Patient"
-	name="patient"/>
-	<!-- enables the support for all annotations -->
+	<bean class="com.gareth.spring.springcore.assignment2.TicketReservation"
+	name="ticket"/>
 	<context:annotation-config/>
 	
 </beans>
