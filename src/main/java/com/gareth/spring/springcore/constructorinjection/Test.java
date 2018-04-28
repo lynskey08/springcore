@@ -1,4 +1,4 @@
-package com.gareth.spring.springcore.innerbeans;
+package com.gareth.spring.springcore.constructorinjection;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -8,13 +8,9 @@ public class Test {
 	public static void main(String[] args) {
 		// parent interface
 		ApplicationContext ctx = new ClassPathXmlApplicationContext(
-				"com/gareth/spring/springcore/innerbeans/config.xml");
+				"com/gareth/spring/springcore/constructorinjection/config.xml");
 		Employee employee = (Employee) ctx.getBean("employee");
-		System.out.println(employee.hashCode());
-		
-		Employee employee2 = (Employee) ctx.getBean("employee");
-		System.out.println(employee2.hashCode());
+		System.out.println(employee);
 
 	}
-
 }

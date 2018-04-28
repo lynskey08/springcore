@@ -8,14 +8,11 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns="http://www.springframework.org/schema/beans">
 
-	<bean name="employee" class="com.gareth.spring.springcore.innerbeans.Employee" p:id="123">
-		<!-- We will set the property as an inner bean rather than creating
-		     a seperate bean for address and making a reference.
-		     Inner bean can only be used in the case of reference types -->
-		<property name="address">
-			<bean class="com.gareth.spring.springcore.innerbeans.Address" 
-				p:hno="52" p:street="Monalee Heights" p:city="Cork City"/>
-		</property>
-	</bean>
-	
+	<!-- scope prototype will create different objects of that type,
+	everytime that object is read and used in out application -->
+	<bean name="employee" class="com.gareth.spring.springcore.innerbeans.Employee" 
+	   p:id="123" scope="prototype"/>
+	   
+	<context:annotation-config/>
+	   
 </beans>

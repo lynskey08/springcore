@@ -10,9 +10,7 @@
 
 	<!-- scope prototype will create different objects of that type,
 	everytime that object is read and used in out application -->
-	<bean name="employee" class="com.gareth.spring.springcore.innerbeans.Employee" 
+	<bean name="university" class="com.gareth.spring.springcore.assignment3.University" 
 	   p:id="123" scope="prototype"/>
-	   
-	<context:annotation-config/>
-	   
+	
 </beans>
